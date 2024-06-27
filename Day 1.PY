@@ -3,12 +3,12 @@
 # between 2000 and 3200 (both included).
 # The numbers obtained should be printed in a comma-separated sequence on a single line.
 
-# n=[]
-# for i in range(2000,3201):
-#     if i%7==0 and i%5!=0:
-#         n.append(i)
+n=[]
+for i in range(2000,3201):
+    if i%7==0 and i%5!=0:
+        n.append(i)
         
-# print(n)            
+print(n)            
 
 
 # # Question 2:
@@ -20,13 +20,13 @@
 # # 40320
 #  fact of 0 and 1 is always 1
 
-# def factorial(n):
-#     if n==0 or n==1:          
-#         return 1    
-#     else:
-#         return n*factorial(n-1)
+def factorial(n):
+    if n==0 or n==1:          
+        return 1    
+    else:
+        return n*factorial(n-1)
 
-# print(factorial(3))
+print(factorial(3))
 
 
 
@@ -38,12 +38,12 @@
 # Then, the output should be:
 # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 
-# def dict(n):
-#      dict={}
-#      for i in range (1,n+1):
-#          dict[i]=i*i
-#      return dict
-# print(dict(4))    
+def dict(n):
+     dict={}
+     for i in range (1,n+1):
+         dict[i]=i*i
+     return dict
+print(dict(4))    
 
 #  Question:
 #  Write a program which accepts a sequence of comma-separated numbers from console and generate a list and a tuple which contains every number.
@@ -60,19 +60,19 @@
 # # printString: to print the string in upper case.
 # # Also please include simple test function to test the class methods.
 
-# class StringManipulator:
+class StringManipulator:
     
-#     def getString(self):
-#         self.string = input("Enter a string: ")
+    def getString(self):
+        self.string = input("Enter a string: ")
     
-#     def printString(self):
-#         print(self.string.upper())
+    def printString(self):
+        print(self.string.upper())
 
-# def test_string():
-#     sm = StringManipulator()
-#     sm.getString()       
-#     sm.printString()      
+def test_string():
+    sm = StringManipulator()
+    sm.getString()       
+    sm.printString()      
 
-# test_string()
+test_string()
 
 # # ------------------------------------------------------------#
