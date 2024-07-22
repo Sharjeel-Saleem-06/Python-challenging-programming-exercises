@@ -18,7 +18,7 @@ def duplicate_char(str):
 
 print(duplicate_char("sharjeel"))
 
-# Write a function
+# Write a function tht takes a sentence and as a word as input and checks weather the word is present in sentence or not 
 def check_word(sen):
     sentence=sen.lower()
     sentence1=sentence.split()
@@ -30,5 +30,25 @@ def check_word(sen):
     else:
         print("Word is not present in sentence")
 
-print(check_word("my name is sharjeel"))            
+print(check_word("my name is sharjeel"))          
 
+# Write a program contains two lists , and create new list which contaon same item of above two lists
+def lists():
+    lst1=[1,2,3,4,5,6,7,8]
+    lst2=[4,5,6,11,22,33]
+    lst3=[]
+    for i in lst1:
+        for j in lst2:
+            if i==j:
+                lst3.append(i)
+    return lst3
+print(lists())           
+
+# Write a program to count the occurance of word in a sentence
+def occurance(str):
+    splitt=str.split()
+    word_count={}
+    for word in splitt:
+        word_count[word]=word_count.get(word,0)+1
+    return word_count
+print(occurance("i am am sharjeel"))
